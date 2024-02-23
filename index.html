@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alivio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" aria-label="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <svg class="logo" aria-label="logo">
+                    <use href="assets/sprites.svg#logo-icon"></use> 
+                </svg>
+                <nav class="header__nav" arial-label="navigation list">
+                     <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Решения</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Сообщество</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="#">Цены</a>
+                        </li>
+                     </ul>
+                </nav>
+                <div class="header__actions">
+                    <button type="button" class="btn btn--singin">Войти</button>
+                    <button type="button" class="btn">Пробная версия</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-navigation" aria-label="mobile menu">
+        <input class="mobile-navigation__toggler" type="checkbox" name="toggler" id="menu-toggler-id">
+        <label for="menu-toggler-id" aria-label="open-close mobile-toggler">
+            <img class="mobile-navigation__burger" src="assets/burger.svg" alt="">
+        </label>
+
+        <nav class="mobile-navigation__menu" arial-label="mobile-navigation list">
+            <ul class="mobile-navigation__list">
+               <li class="mobile-navigation__item">
+                   <a class="mobile-navigation__link" href="#">О нас</a>
+               </li>
+               <li class="mobile-navigation__item">
+                   <a class="mobile-navigation__link" href="#">Решения</a>
+               </li> 
+               <li class="mobile-navigation__item">
+                   <a class="mobile-navigation__link" href="#">Сообщество</a>
+               </li>
+               <li class="mobile-navigation__item">
+                   <a class="mobile-navigation__link" href="#">Цены</a>
+               </li>
+            </ul>
+
+        <label class="mobile-navigation__close" for="menu-toggler-id" aria-label="close mobile-toggler">
+            <img class="mobile-navigation__cross" src="assets/cross.svg" alt="">
+        </label>
+       </nav>
+    </div>
+
+    <main>
+        <section class="hero" aria-label="hero section" id="hero-id">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Внимание и Управление</h1>
+                    <p class="hero__desc" aria-label="main descriprion">
+                        Каждый человек испытывает стресс по-разному. Позвольте Alivio помочь вам преодолеть стресс с помощью персонализированного дневника.
+                    </p>
+                    <button class="btn">Найти свой путь</button>
+                </div>
+            </div>
+        </section>
+       <section class="about" aria-label="about">
+            <div class="container">
+                <h3 class="about__subtitle">Как это работает</h3>
+                <div class="about__content">
+                    <h2 class="about__title">
+                        Осознать и избавиться от стресса за 3 шага
+                    </h2>
+                    <p class="about__desc">
+                        Alivio предлагает столько журналов, сколько потребуется, посвященных различным областям, таким как тревога, подавленность, печаль или гнев, а также различным личным причинам, которые помогут вам осознать свои эмоции и научат справляться со стрессом.
+                    </p>
+                </div>
+                <div class="about__cards">
+                    <figure class="card" aria-label="first card">
+                        <h3 class="card__title">Персонально</h3>
+                        <p class="card__descr" aria-label="first card descriprion">
+                            Ответьте на краткий опрос о том, как вы выражаете себя, что вызывает у вас стресс и в какой области вы хотели бы поработать. Таким образом, мы сможем полностью персонализировать ваш журнал!
+                        </p>
+                        <img src="assets/webp/main-1.webp" alt="card image one" class="card__img">
+                    </figure>
+
+                    <figure class="card" aria-label="second card">
+                        <h3 class="card__title card__title--second card__title--right">Заметки и понимание</h3>
+                        <p class="card__descr" aria-label="second card descriprion">
+                            Пишите, рисуйте, размышляйте, понимайте. Alivio проведет вас по подсказкам и поможет справиться со стрессом!
+                        </p>
+                        <img src="assets/webp/main-2.webp" alt="card image two" class="card__img">
+                    </figure>
+
+                    <figure class="card" aria-label="third card">
+                        <h3 class="card__title card__title--third">Alivio</h3>
+                        <p class="card__descr" aria-label="third card descriprion">
+                            Теперь вы осознаете это, и у вас есть способ справиться со своим собственным стрессом. Чего вы ждете? Alivio, сегодня!
+                        </p>
+                        <img src="assets/webp/main-3.webp" alt="card image three" class="card__img">
+                    </figure>
+                </div>  
+            </div>
+        </section> 
+
+        <section class="success" aria-label="success section">
+            <div class="container">
+                <div class="success__wrapper">
+                    <div class="success__content">
+                        <h3 class="success__title">
+                            Давайте послушаем историю успеха Кайлы
+                        </h3>
+                        <p class="success__description">
+                            Посмотрите, насколько хорошо Alivio работает в жизни реального клиента. 
+                        </p>
+                        <button class="btn">Начать</button>
+                    </div>
+                    <div class="success__content-video">
+                        <img class="success__cover" src="assets/webp/video-bg-2.webp" alt="video cover">
+                        <svg class="success_play-icon">
+                            <use href="assets/sprites.svg#play-icon"></use>
+                        </svg>
+                        <div class="success__gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product" aria-label="product section">
+            <div class="container">
+                <div class="product__wrapper">
+                    <div class="product__preview">
+                        <img class="product__preview-img" src="assets/webp/imageprod.webp">
+                    </div>
+                    <div class="product__content">
+                        <h5 class="product__info">Наше предложение</h5>
+                        <h4 class="product__title">Расскажите нам о своем стрессе</h4>
+                        <p class="product_desc">
+                            Каждый испытывает стресс по-разному. Позвольте Alivio помочь вам преодолеть стресс с помощью
+                            персонализированного дневника.
+                        </p>
+                        <button class="btn">Найти решение</button>
+                    </div>
+                    <figure class="person-card">
+                        <h4 class="person-card__title">
+                            Персонально для
+                        </h4>
+                        <div class="person-card__preview">
+                            <img src="assets/webp/imageprod.webp" alt="preview image" class="person-card__preview-img">
+                        </div>
+                            <h5 class="person-card__name">
+                                Mikayla
+                            </h5>
+                            <blockquote class="person-card__desc">
+                            <h6 class="person-card__subtitle">
+                                Содержание
+                            </h6>
+                            <ul class="person-card__list">
+                                <li class="person-card__list-item">
+                                    Осознайте свой стресс
+                                </li>
+                                <li class="person-card__list-item">
+                                    Управление гневом
+                                </li>
+                            </ul>
+                        </blockquote>
+                    </figure>
+                </div>
+        </section>
+    </main>
+    <footer class="pricing" aria-label="pricing section"  >
+        <div class="container">
+            <div class="pricing__content">
+                <h2 class="pricing__title">Alivio</h2>
+                <nav class="pricing__nav">
+                    <ul class="pricing__nav-list">
+                        <li class="pricing_nav-item">
+                            <a href="#" class="pricing__nav-link">О нас</a>
+                        </li>
+                        <li class="pricing_nav-item">
+                            <a href="#" class="pricing__nav-link">Решения</a>
+                        </li>
+                        <li class="pricing_nav-item">
+                            <a href="#" class="pricing__nav-link">Сообщество</a>
+                        </li>
+                        <li class="pricing_nav-item">
+                            <a href="#" class="pricing__nav-link">Цены</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
